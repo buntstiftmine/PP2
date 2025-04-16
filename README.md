@@ -372,7 +372,8 @@ cd /
 **Run `ls` again and insert the content here:**
 <details>
     <summary>Your Answer</summary>
-    ....
+    bin                boot  etc   init  lib.usr-is-merged  lost+found  mnt  proc  run   sbin.usr-is-merged  srv  tmp  var
+bin.usr-is-merged  dev   home  lib   lib64              media       opt  root  sbin  snap                sys  usr
 </details>
 
 Now navigate through your filesystem using `cd` and the name of the directory you want to set as your new `pwd`.
@@ -388,8 +389,30 @@ Use `rm` to delete a file and `rm -rf` to delete a directory.
 <details>
     <summary>Your Terminal Output</summary>
 ```bash
-your terminal output
+    
 ```
+mine@MinesOmen:~$ cd /
+mine@MinesOmen:/$ ls
+bin                boot  etc   init  lib.usr-is-merged  lost+found  mnt  proc  run   sbin.usr-is-merged  srv  tmp  var
+bin.usr-is-merged  dev   home  lib   lib64              media       opt  root  sbin  snap                sys  usr
+mine@MinesOmen:/$ cd /home/mine
+mine@MinesOmen:~$ ls
+'betrag='   echo   else   fi   function   functions   sum   var1   var2
+mine@MinesOmen:~$ mkdir newdir
+mine@MinesOmen:~$ ls
+'betrag='   echo   else   fi   function   functions   newdir   sum   var1   var2
+mine@MinesOmen:~$ cd /home/mine/newdir
+mine@MinesOmen:~/newdir$ touch newfile
+mine@MinesOmen:~/newdir$ ls
+newfile
+mine@MinesOmen:~/newdir$ cd /home/mine
+mine@MinesOmen:~$ ls
+'betrag='   echo   else   fi   function   functions   newdir   sum   var1   var2
+mine@MinesOmen:~$ rm -rf newdir
+mine@MinesOmen:~$ ls
+'betrag='   echo   else   fi   function   functions   sum   var1   var2
+mine@MinesOmen:~$
+    
 </details>
 
 ### Task 10: Managing Software
