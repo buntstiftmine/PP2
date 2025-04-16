@@ -71,8 +71,8 @@ Try accessing the `return_value` identifier without prepending `$`.
 **What happens and why?**
 
 <details>
-    <summary>You Answer</summary>
-    ......
+    <summary>Your Answer</summary>
+    Without the prepending '$' the value of return_value can not be accessed and the input is returned as text. The dollar sign operator is necessary to access the value of the variable.   
 </details>
 
 ### Task 3: Function-Identifiers
@@ -97,7 +97,10 @@ and pressing `enter`.
 
 <details>
     <summary>Calling a Function</summary>
-    Include a screenshot of your function-call!
+    ![Screenshot 2025-04-16 105737](./assets/Screenshot 2025-04-16 105737.png)
+
+    https://github.com/buntstiftmine/PP2/blob/master/assets/Screenshot%202025-04-16%20105737.png
+
 </details>
 
 ### Task 4: Handling Parameters
@@ -263,7 +266,7 @@ These examples demonstrate various fundamental operations in Bash scripting, inc
     <summary>Your Function</summary>
     
 ```bash
-your code
+mines_func () { var1=$1; var2=$2; sum=$(($var1+$var2)); a=0; echo "$var1 + $var2 = $sum"; if (($sum<$a));  then betrag=$(($sum*($a-1))); else betrag=$sum; fi; echo "Betrag ist $betrag";}
 ```
 
 </details>
@@ -301,7 +304,7 @@ cat ./function
 **What happend?**
 <details>
     <summary>Your Explaination</summary>
-    .....
+    When reading the file by using the command cat ./functions you can see that the second function has been added to the file right after the first function.
 
 </details>
 
@@ -344,7 +347,7 @@ You can use a shorthand within your calls to add this string as a prefix to any 
 **Look at task 6 again. What is the complete filepath of your functions file?**
 <details>
     <summary>Your Answer</summary>
-    ....
+    home/mine/functions
 </details>
 
 All filenames start with a `/`. 
@@ -354,6 +357,7 @@ You can retrieve the absolute path of a file by running the `realpath` command a
 ```bash
 realpath ./functions
 ```
+*90 Minuten sind hier vorbei*
 
 ### Task 8: Listing Files
 In order to list all files with your `pwd`, type the `ls` command. 
